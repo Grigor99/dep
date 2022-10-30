@@ -8,9 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DepController {
+
+    @GetMapping("/a")
+    public ResponseEntity<String> getfHi() {
+        return ResponseEntity.ok("done su    ccessfully");
+    }
+
     @GetMapping
-    public ResponseEntity<String> getHi(){
-        return ResponseEntity.ok("done su   ccessfully");
+    public ResponseEntity<String> getHi() {
+        return ResponseEntity.ok("done su    ccessfully");
     }
 
 }
