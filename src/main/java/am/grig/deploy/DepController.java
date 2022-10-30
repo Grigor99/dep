@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DepController {
     @GetMapping
     public ResponseEntity<String> getHi(){
-        return ResponseEntity.ok("done");
+        return ResponseEntity.ok("done successfully");
     }
 
 }
