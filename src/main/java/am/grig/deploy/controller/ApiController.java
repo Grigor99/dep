@@ -12,4 +12,9 @@ public class ApiController {
     public ResponseEntity<String > isHealthy(){
         return ResponseEntity.ok("it works successfully");
     }
+
+    @GetMapping("/api")
+    public ResponseEntity<String > isHealtdhy(){
+        return ResponseEntity.ok("it works 444 successfully");
+    }
 }
