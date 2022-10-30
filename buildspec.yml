@@ -1,9 +1,8 @@
-
 version: 0.2
 phases:
   install:
     runtime-versions:
-      java: openjdk11
+      java: corretto17
   pre_build:
     commands:
       - echo In the pre_build phase...
@@ -14,8 +13,8 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
-      - mv target/deploy-0.0.1-SNAPSHOT.jar deploy-0.0.1-SNAPSHOT.jar
+      - mv target/bike-service-0.0.1-SNAPSHOT.war bike-service-0.0.1-SNAPSHOT.war
 artifacts:
   files:
-    - deploy-0.0.1-SNAPSHOT.jar
+    - bike-service-0.0.1-SNAPSHOT.war
     - .ebextensions/**/*
