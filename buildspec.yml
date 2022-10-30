@@ -28,5 +28,4 @@ phases:
       - cat imagedefinitions.json
 artifacts:
   files:
-    - imagedefinitions.json
     - target/deploy-0.0.1-SNAPSHOT.jar
