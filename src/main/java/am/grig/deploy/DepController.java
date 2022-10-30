@@ -11,8 +11,13 @@ public class DepController {
 
     @GetMapping("/a")
     public ResponseEntity<String> getfHi() {
-        return ResponseEntity.ok("done su    ccessfully");
+        return ResponseEntity.ok("done su  efef  ccessfully");
     }
+    @GetMapping("/afff")
+    public ResponseEntity<String> getffHi() {
+        return ResponseEntity.ok("done su    efefeccessfully");
+    }
+
 
     @GetMapping
     public ResponseEntity<String> getHi() {
