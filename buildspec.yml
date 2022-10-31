@@ -21,7 +21,7 @@ phases:
       - echo Pushing the Docker images...
       - docker push 495642364690.dkr.ecr.us-west-1.amazonaws.com/grigor99:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"deploy","imageUri":"%s"}]' 495642364690.dkr.ecr.us-west-1.amazonaws.com/grigor99:latest > imagedefinitions.json
+      - printf '[{"name":"deploy","imageUri":"495642364690.dkr.ecr.us-west-1.amazonaws.com/grigor99:latest"}]' 495642364690.dkr.ecr.us-west-1.amazonaws.com/grigor99:latest > imagedefinitions.json
       - cat imagedefinitions.json
 artifacts:
   files:
