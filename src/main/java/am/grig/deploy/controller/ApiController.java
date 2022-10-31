@@ -12,6 +12,10 @@ public class ApiController {
     public ResponseEntity<String > isHealthy(){
         return ResponseEntity.ok("get is healthy");
     }
+    @GetMapping("/testing")
+    public ResponseEntity<String > newOne(){
+        return ResponseEntity.ok("testing is up");
+    }
 
     @GetMapping("/dddd")
     public ResponseEntity<String > isffHealthy(){
