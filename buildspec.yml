@@ -21,9 +21,9 @@ phases:
       - echo Pushing the Docker images...
       - docker push 495642364690.dkr.ecr.us-west-1.amazonaws.com/grigor99:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"deploy","imageUri":"%s"}]' $REPOSITORY_URI:latest > imagedefinition.json
+      - printf '[{"name":"deploy","imageUri":"%s"}]' 495642364690.dkr.ecr.us-west-1.amazonaws.com/grigor99:latest > imagedefinitions.json
       - cat imagedefinitions.json
 artifacts:
   files:
-    - imagedefinition.json
+    - imagedefinitions.json
     - target/deploy-0.0.1-SNAPSHOT.jar
