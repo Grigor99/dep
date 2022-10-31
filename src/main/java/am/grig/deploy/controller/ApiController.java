@@ -13,7 +13,19 @@ public class ApiController {
         return ResponseEntity.ok("get is healthy");
     }
 
+    @GetMapping("/dddd")
+    public ResponseEntity<String > isffHealthy(){
+        return ResponseEntity.ok("get is healthy");
+    }
 
+
+
+
+
+    @GetMapping("/a")
+    public ResponseEntity<String > isNotHealthy(){
+        return ResponseEntity.ok("get a is healthy");
+    }
     @GetMapping("/api")
     public ResponseEntity<String > isHealtdhy(){
         return ResponseEntity.ok("get with /api is healthy");
